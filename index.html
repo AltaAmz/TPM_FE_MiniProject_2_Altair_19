@@ -3,14 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fumart</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>Fumart</span>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="/image/user-img.png" alt="user" class="user-img">
+            <div>
+                <p class="bold">User</p>
+                <p>Admin</p>
+            </div>
+        </div>
+
         <ul>
-            <li><a href="index.html">Product</a></li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-box' ></i>
+                    <span class="nav-item">Products</span>
+                </a>
+                <span class="tooltip">Products</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-food-menu'></i>
+                    <span class="nav-item">Orders</span>
+                </a>
+                <span class="tooltip">Orders</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="nav-item">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-help-circle'></i>
+                    <span class="nav-item">Help</span>
+                </a>
+                <span class="tooltip">Help</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message-alt-error'></i>
+                    <span class="nav-item">Feedback</span>
+                </a>
+                <span class="tooltip">Feedback</span>
+            </li>
         </ul>
-    </nav>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1>Welcome to the Dashboard</h1>
+            <p>This is the main content area.</p>
+        </div>
+    </div>
 </body>
+
+<script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+
+    btn.onclick = function() {
+        sidebar.classList.toggle("active");
+    }
+</script>
 </html>
