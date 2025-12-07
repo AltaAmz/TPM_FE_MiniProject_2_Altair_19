@@ -164,3 +164,11 @@ p {
     font-size: 16px;
     color: #4B5563;
 }
+
+.product-card{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 20px;
+}
